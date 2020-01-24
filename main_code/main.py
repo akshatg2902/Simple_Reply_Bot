@@ -23,7 +23,7 @@ HEY! THIS IS HELP SECTION.
 To use this bot,send it as a username\
 """)
 
-# Handle all other messages with content_type 'text'
+# Handle all other messages
 @bot.message_handler(func=lambda message: True)
 def echo_message(message):
     bot.reply_to(message, message.text)
